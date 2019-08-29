@@ -18,10 +18,8 @@ class BaseLayout extends React.Component {
     render() {
         return (
             <div className="root-div">
-                <Link to="/">Main</Link>
-                <Link to="/episode/1">Episode</Link>
-
-                <Link to="/show/6771">Show</Link>
+                <Link to="/">Lobby</Link>
+                
                 
                 <Switch>
                     <Route path="/" exact component={Lobby}/>

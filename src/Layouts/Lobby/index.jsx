@@ -3,6 +3,7 @@ import * as actions from "../../Store/Shows/actions";
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
 
+import Card from "../../Components/LobbyCard"
 class Lobby extends React.Component {
 
     componentDidMount() {
@@ -12,13 +13,13 @@ class Lobby extends React.Component {
     render() {
         return (
             <div>
-                <ul>
+                
                     {
-                        this.props.shows.map(show => {
-                            return <li key={show.show.id}><Link  to={"/show/" + show.show.id}>{show.show.name}</Link></li>
+                        this.props.shows.map((show, index) => {
+                            return <Card key={index} show={show.show}/>
                         })
                     }
-                </ul>
+                
             </div>
         )
     }

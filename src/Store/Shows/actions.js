@@ -18,9 +18,9 @@ export const fetchSingleShow = (id) => (dispatch) => {
         .then(res => res.json())
         .then(show => {
             fetch(`http://api.tvmaze.com/shows/${id}/episodes`)
-                .then(res => res.json)
-                .then(episods => {
-                    show.episods = episods;
+                .then(res => res.json())
+                .then(episodes => {
+                    show.episodes = episodes;
                     dispatch({
                         type: types.GET_SINGLE_SHOW,
                         payload: show

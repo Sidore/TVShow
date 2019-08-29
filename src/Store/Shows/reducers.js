@@ -1,7 +1,9 @@
 import * as types from "./types";
 
 const initialState = {
-    currentShow : {},
+    currentShow : {
+        episodes: []
+    },
     shows : []
 };
 
