@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html --public-url /dist/",
+    "build": "parcel build src/index.html --public-url /dist/ "
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/Sidore/TVShow/issues"
   },
-  "homepage": "https://github.com/Sidore/TVShow#readme"
+  "homepage": "https://github.com/Sidore/TVShow#readme",
+  "dependencies": {
+    "parcel": "^1.12.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  }
 }
